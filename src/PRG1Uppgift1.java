@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.util.Scanner;
 
 /**
  * Created by Emil Käck on 2016-11-28.
@@ -18,28 +19,35 @@ public class PRG1Uppgift1 {
 
     JOptionPane.showMessageDialog(null, Numbers);
  **/
-/** Assignment 5.5 Page 122 **/
+                                                                                                                        /** Assignment 5.5 Page 122 **/
 
 /**     double i = 1;
         double div = 0;
 
         while (1 / i > 0.00001){    //Så länge 1/i är större än 0.00001 så kommer den fortsätta dela på i
 
-            div += 1 / i;   // här plusar den på 1/i
-            i++;            // sen ökar man i med 1
-            div -= 1/ i;    // här tar den minus 1/i
+            div += 1 / i;                                                                                                // här plusar den på 1/i
+            i++;                                                                                                        // sen ökar man i med 1
+            div -= 1/ i;                                                                                                // här tar den minus 1/i
             i++;
         }
 
-        System.out.println(div);    // printar ut svaret
+        System.out.println(div);                                                                                        // printar ut svaret
  **/
-/** Assigment 5.7 Page 123 **/
-
+                                                                                                                        /** Assigment 5.7 Page 123 **/
+ /**
         String ord;
-        ord = JOptionPane.showInputDialog("Ord?")
+        ord = JOptionPane.showInputDialog("Ord?");                                                                      //får ordet
+        String reverseord;
+        new StringBuilder(ord).reverse().toString();                                                                    //vänder på odet
+        reverseord = new StringBuilder(ord).reverse().toString();                                                       // ny String för det vända ordet
 
-        for()
-
+        if (ord.equals(reverseord)){                                                                                    // Tittar om det vända ordet är samma som det vanliga ordet
+            JOptionPane.showMessageDialog(null, "Palindrom ord!");
+        } else
+            JOptionPane.showMessageDialog(null, "Vanligt ord!");
+**/
+                                                                                                                        /**Assigment 5.8 Page 123 **/
     }
 
 }
