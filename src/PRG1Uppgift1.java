@@ -21,12 +21,20 @@ public class PRG1Uppgift1 {
 /** Assignment 5.5 Page 122 **/
 
         double absolut = 0.00001;
-        double i;
+        int delat = 1;
+        double tal = 0;
+        double svar = 0;
 
-        for(i=1; i<=absolut; i++){
+        do {
+            tal = 1 / delat;
+            delat = delat + 1;
+            svar = svar + tal;
+            tal = 1 / delat;
+            delat = delat + 1;
+            svar = svar - tal;
+        }   while (svar>=absolut);
 
-
-        }
+        JOptionPane.showMessageDialog(null, svar);
 
     }
 
