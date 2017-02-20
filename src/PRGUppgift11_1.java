@@ -12,6 +12,7 @@ public class PRGUppgift11_1 {
     }
 
     public static int[] readData(int a) {
+        //titttar igenom listan och sätter in talet om det inte finns
         int[] input = new int[1000];
         System.out.println("Ange din data, Avsluta med End of File");
         Scanner myScanner = new Scanner(System.in);
