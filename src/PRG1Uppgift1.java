@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.util.Scanner;
 
 /**
  * Created by Emil Käck on 2016-11-28.
